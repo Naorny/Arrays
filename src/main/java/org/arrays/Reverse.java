@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class Reverse {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int[] array = new int[10];
+        String[] array = new String[10];
         System.out.println("Enter elements of Array:");
         for (int i = 0; i < array.length-2; i++) {
-            array[i] = Integer.parseInt(scan.next());
+            array[i] = scan.nextLine();
         }
         System.out.println("Array of elements: " + Arrays.toString(array) + " ");
         System.out.println("Array in reverse:");
